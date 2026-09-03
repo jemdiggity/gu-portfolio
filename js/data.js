@@ -101,15 +101,16 @@ const PROJECTS = [
     summary: "The second large renovation in Myoko: a green-sided family house of small tatami rooms, opened up and refitted with a new kitchen, washroom and living room.",
     body: [
       // fill in
-      "The house had a narrow hall, a stainless-steel kitchen from the 1970s and a run of tatami rooms divided by sliding screens. The tatami rooms became the living room, the screened rooms the kitchen and dining room, and the old kitchen the washroom and dressing counter. A run of coral-coloured cabinets and a long wooden table make the kitchen; the washroom has a double basin on a timber stand and a dressing counter under the window."
+      "The house had a narrow hall, a stainless-steel kitchen from the 1970s and a run of tatami rooms divided by sliding screens. The tatami rooms became the living room, the old sitting room and the screened rooms the kitchen and dining room, and the old kitchen the washroom and dressing counter. A run of coral-coloured cabinets and a long wooden table make the kitchen; the washroom has a double basin on a timber stand and a dressing counter under the window."
     ],
     beforeAfter: [
       { before: "images/tampopo-2/before-tatami-rooms.jpg", after: "images/tampopo-2/living-wide.jpg", caption: "the tatami rooms became the living room" },
-      { before: "images/tampopo-2/before-rooms.jpg", after: "images/tampopo-2/kitchen.jpg", caption: "the rooms divided by screens became the kitchen and dining room" },
+      { before: "images/tampopo-2/before-rooms.jpg", after: "images/tampopo-2/kitchen.jpg", caption: "the rooms divided by screens became the dining room" },
       { before: "images/tampopo-2/before-kitchen.jpg", after: "images/tampopo-2/washroom-wide.jpg", caption: "the old kitchen became the washroom and dressing counter" },
-      { before: "images/tampopo-2/before-living.jpg", after: "images/tampopo-2/living.jpg", caption: "the living room" }
+      { before: "images/tampopo-2/before-living.jpg", after: "images/tampopo-2/kitchen-dining.jpg", caption: "the old sitting room became the kitchen" }
     ],
     photos: [
+      { src: "images/tampopo-2/living.jpg", caption: "Living room" },
       { src: "images/tampopo-2/kitchen-run.jpg", caption: "The kitchen" },
       { src: "images/tampopo-2/washroom.jpg", caption: "Double basin on a timber stand" },
       { src: "images/tampopo-2/vanity.jpg", caption: "Dressing counter" }
