@@ -3,66 +3,38 @@
 (function () {
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const href = (p) => "project.html?p=" + encodeURIComponent(p.slug);
+  const isDrawing = (src) => /\.svg$/i.test(src) && !/placeholder/.test(src);
 
-  // Index table, grouped by series
-  const rows = document.getElementById("index-rows");
-  const groups = SERIES.map((s) => ({ ...s, items: PROJECTS.filter((p) => p.series === s.id) }))
-    .filter((g) => g.items.length);
+  document.getElementById("intro").textContent = SITE.tagline || "";
+
+  // Work, grouped by series
+  const groups = SERIES.map((s) => ({ ...s, items: PROJECTS.filter((p) => p.series === s.id) })).filter((g) => g.items.length);
   const ungrouped = PROJECTS.filter((p) => !SERIES.some((s) => s.id === p.series));
   if (ungrouped.length) groups.push({ id: "other", title: "Other work", items: ungrouped });
 
-  rows.innerHTML = groups.map((g) => `
-    <tr class="group"><th scope="rowgroup" colspan="5">${esc(g.title)}</th></tr>
-    ${g.items.map((p) => `
-      <tr>
-        <td class="sheet">${esc(p.sheet)}</td>
-        <td class="title"><a href="${href(p)}">${esc(p.title)}</a></td>
-        <td>${esc(p.location)}</td>
-        <td class="year">${esc(p.year)}</td>
-        <td class="status">${esc(p.status)}</td>
-      </tr>`).join("")}
-  `).join("");
-
-  document.getElementById("work-count").textContent =
-    PROJECTS.length + (PROJECTS.length === 1 ? " sheet" : " sheets");
-
-  // Plates
-  document.getElementById("plates").innerHTML = PROJECTS.map((p) => `
-    <figure class="plate">
-      <a href="${href(p)}">
-        <div class="plate-frame"><img src="${esc(p.drawing)}" alt="${esc(p.title)}, drawing"></div>
-        <figcaption>
-          <span>${esc(p.title)}${p.location ? ", " + esc(p.location) : ""}${p.year ? " " + esc(p.year) : ""}</span>
-          <span class="sheet">${esc(p.sheet)}</span>
-        </figcaption>
-      </a>
-    </figure>`).join("");
-
-  document.getElementById("tagline").textContent = SITE.tagline || "";
-
-  // Row click: the whole index row leads to the sheet
-  rows.addEventListener("click", (e) => {
-    if (e.target.closest("a") || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-    const link = e.target.closest("tr")?.querySelector("a");
-    if (link) location.href = link.href;
-  });
-
-  // Hero: a photo if one is given, otherwise the line drawing
-  if (SITE.heroImage) {
-    const svg = document.querySelector(".hero-drawing");
-    const img = document.createElement("img");
-    img.className = "hero-photo";
-    img.src = SITE.heroImage;
-    img.alt = SITE.heroImageAlt || "";
-    svg.replaceWith(img);
-  }
+  document.getElementById("groups").innerHTML = groups.map((g) => `
+    <div class="group">
+      <h2>${esc(g.title)}</h2>
+      <div class="grid${g.wide ? " wide" : ""}">
+        ${g.items.map((p) => {
+          const cover = p.cover || p.drawing;
+          return `
+          <figure class="tile">
+            <a href="${href(p)}">
+              <div class="frame${isDrawing(cover) ? " drawing" : ""}"><img src="${esc(cover)}" alt="${esc(p.title)}"></div>
+              <figcaption>${esc(p.title)}${p.location ? `<span>${esc(p.location)}${p.year ? ", " + esc(p.year) : ""}</span>` : ""}</figcaption>
+            </a>
+          </figure>`;
+        }).join("")}
+      </div>
+    </div>`).join("");
 
   // On site
   const onSite = document.getElementById("onsite");
   const photos = (SITE.onSite && SITE.onSite.photos) || [];
   if (!photos.length) onSite.hidden = true;
   else {
-    document.getElementById("onsite-text").innerHTML = SITE.onSite.text ? `<p>${esc(SITE.onSite.text)}</p>` : "";
+    document.getElementById("onsite-text").textContent = SITE.onSite.text || "";
     document.getElementById("onsite-photos").innerHTML = photos.map((ph) => `
       <figure><div class="photo"><img src="${esc(ph.src)}" alt="${esc(ph.caption || "")}" loading="lazy"></div>
       ${ph.caption ? `<figcaption>${esc(ph.caption)}</figcaption>` : ""}</figure>`).join("");
@@ -80,13 +52,5 @@
   if (SITE.instagram) links.push(`<a href="${esc(SITE.instagram)}" rel="me">Instagram</a>`);
   document.getElementById("links").innerHTML = links.join("");
 
-  // Title block and footer
-  document.getElementById("tb-meta").innerHTML =
-    `<div>Issued ${esc(SITE.issued)}</div><div><a href="mailto:${esc(SITE.email)}">${esc(SITE.email)}</a></div>`;
   document.getElementById("copyright").textContent = "© " + SITE.issued + " " + SITE.name;
-
-  // Role line under the name and in the title block
-  document.querySelectorAll(".tb-role").forEach((el) => {
-    el.textContent = SITE.role + (SITE.city ? ", " + SITE.city : "");
-  });
 })();

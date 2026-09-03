@@ -32,9 +32,9 @@ const SITE = {
   ]
 };
 
-// Series group the index. Sheet prefixes follow them: A-1xx built, A-2xx academic, F-1xx furniture.
+// Series group the work on the home page. "wide" shows that group two tiles per row instead of three.
 const SERIES = [
-  { id: "built",     title: "Built work" },
+  { id: "built",     title: "Built work", wide: true },
   { id: "academic",  title: "Academic work" },
   { id: "furniture", title: "Furniture and cabinetry" }
 ];
@@ -43,7 +43,6 @@ const PROJECTS = [
   {
     slug: "tampopo-1",
     series: "built",
-    sheet: "A-101",
     title: "Tampopo 1",
     location: "Myoko, Japan",
     year: "",                        // fill in
@@ -51,7 +50,7 @@ const PROJECTS = [
     type: "Renovation",
     area: "",                        // fill in
     role: "Design",
-    drawing: "drawings/tampopo-1.svg",
+    cover: "drawings/tampopo-1.svg",          // image shown on the home page and at the top of the project page
     summary: "The first of two large renovations in Myoko, a town in the heavy-snow country of Niigata Prefecture.",
     body: [
       // fill in: what the building was, what changed, materials, how the snow was handled.
@@ -73,7 +72,6 @@ const PROJECTS = [
   {
     slug: "tampopo-2",
     series: "built",
-    sheet: "A-102",
     title: "Tampopo 2",
     location: "Myoko, Japan",
     year: "",                        // fill in
@@ -81,7 +79,7 @@ const PROJECTS = [
     type: "Renovation",
     area: "",                        // fill in
     role: "Design",
-    drawing: "drawings/tampopo-2.svg",
+    cover: "drawings/tampopo-2.svg",          // image shown on the home page and at the top of the project page
     summary: "The second large renovation in Myoko, following Tampopo 1.",
     body: [
       // fill in
@@ -103,7 +101,6 @@ const PROJECTS = [
   {
     slug: "calgary-foundation-year",
     series: "academic",
-    sheet: "A-201",
     title: "Foundation year studio",
     location: "University of Calgary",
     year: "",                        // fill in
@@ -111,7 +108,7 @@ const PROJECTS = [
     type: "Studio projects",
     area: "",
     role: "Student work",
-    drawing: "drawings/calgary-foundation.svg",
+    cover: "drawings/calgary-foundation.svg",          // image shown on the home page and at the top of the project page
     summary: "Projects from the foundation year of the Master of Architecture program at the University of Calgary.",
     body: [
       // fill in: split this into one entry per project once names and drawings are ready.
@@ -124,7 +121,6 @@ const PROJECTS = [
   {
     slug: "seoul-cyber-undergraduate",
     series: "academic",
-    sheet: "A-202",
     title: "Undergraduate studio",
     location: "Seoul Cyber University",
     year: "",                        // fill in
@@ -132,7 +128,7 @@ const PROJECTS = [
     type: "Studio projects",
     area: "",
     role: "Student work",
-    drawing: "drawings/seoul-cyber.svg",
+    cover: "drawings/seoul-cyber.svg",          // image shown on the home page and at the top of the project page
     summary: "Projects from the architecture program at Seoul Cyber University.",
     body: [
       // fill in: split this into one entry per project once names and drawings are ready.
@@ -145,7 +141,6 @@ const PROJECTS = [
   {
     slug: "kitchen-cabinets",
     series: "furniture",
-    sheet: "F-101",
     title: "Kitchen cabinets",
     location: "",
     year: "",
@@ -153,7 +148,7 @@ const PROJECTS = [
     type: "Built-in cabinetry",
     area: "",
     role: "Design and making",
-    drawing: "drawings/kitchen-cabinets.svg",
+    cover: "drawings/kitchen-cabinets.svg",          // image shown on the home page and at the top of the project page
     summary: "Fitted kitchen cabinetry, designed and built for specific rooms.",
     body: [
       // fill in: materials, joinery, the kitchens they were made for.
@@ -166,7 +161,6 @@ const PROJECTS = [
   {
     slug: "bathroom-vanities",
     series: "furniture",
-    sheet: "F-102",
     title: "Bathroom vanity counters",
     location: "",
     year: "",
@@ -174,7 +168,7 @@ const PROJECTS = [
     type: "Built-in cabinetry",
     area: "",
     role: "Design and making",
-    drawing: "drawings/bathroom-vanity.svg",
+    cover: "drawings/bathroom-vanity.svg",          // image shown on the home page and at the top of the project page
     summary: "Lavatory counters and vanity units with integrated storage.",
     body: [
       // fill in
@@ -187,7 +181,6 @@ const PROJECTS = [
   {
     slug: "furniture",
     series: "furniture",
-    sheet: "F-103",
     title: "Furniture",
     location: "",
     year: "",
@@ -195,7 +188,7 @@ const PROJECTS = [
     type: "Freestanding pieces",
     area: "",
     role: "Design and making",
-    drawing: "drawings/furniture.svg",
+    cover: "drawings/furniture.svg",          // image shown on the home page and at the top of the project page
     summary: "Tables, shelving and other freestanding pieces.",
     body: [
       // fill in

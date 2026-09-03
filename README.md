@@ -18,7 +18,7 @@ Everything shown on the site comes from one file: `js/data.js`.
 
 - `SITE` holds the name, role line, contact address, the intro paragraphs, the education list, the on-site photos and an optional hero photo.
 - `SERIES` defines the groups in the index (built work, academic work, furniture and cabinetry).
-- `PROJECTS` is the list of sheets. Add, remove or reorder entries there; the home page and project pages update on their own.
+- `PROJECTS` is the list of projects. Add, remove or reorder entries there; the home page and project pages update on their own. Each project has a `cover` image used on the home page and at the top of its page.
 
 Fields the owner has not supplied yet are marked `fill in` in that file. Leave a field as `""` to hide it.
 

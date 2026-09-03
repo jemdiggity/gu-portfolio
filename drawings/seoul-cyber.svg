@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none" stroke="#1a1a18" stroke-linecap="round" stroke-linejoin="round"><style>text{font-family:Archivo,Helvetica,Arial,sans-serif;font-size:12px;fill:#6b6a66;stroke:none}.w{stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter}.m{stroke-width:2}.t{stroke-width:.8}.f{fill:#1a1a18;stroke:none}.g{stroke:#c2331c}</style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none" stroke="#1a1a18" stroke-linecap="round" stroke-linejoin="round"><style>text{font-family:Archivo,Helvetica,Arial,sans-serif;font-size:12px;fill:#6b6a66;stroke:none}.w{stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter}.m{stroke-width:2}.t{stroke-width:.8}.f{fill:#1a1a18;stroke:none}</style>
 <path class="t" d="M60 60 H740 V500 H60 Z" stroke-dasharray="10 8"/>
 <path class="w" d="M180 140 H540 V400 H180 Z"/>
 <path class="m" d="M300 140 V260 H420 V140 M300 260 V400"/>
@@ -13,5 +13,4 @@
 <path class="t" d="M180 440 H540 M180 434 V446 M540 434 V446 M360 434 V446"/>
 <text x="360" y="465" text-anchor="middle">12 m</text>
 <text x="60" y="530" fill="#1a1a18">Plan, 1:100</text>
-<path class="g t" d="M720 460 m-16 0 a16 16 0 1 0 32 0 a16 16 0 1 0 -32 0 M720 476 V444"/><path d="M720 440 l5 9 h-10 z" fill="#c2331c" stroke="none"/>
 </svg>
