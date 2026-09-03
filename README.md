@@ -29,6 +29,7 @@ Photos live under `images/`, one folder per project, and are referenced from `js
 - `cover`: the image on the home page and at the top of its page.
 - `photos`: finished work, shown two across at their natural proportions.
 - `beforeAfter`: pairs of `before` and `after` paths, shown side by side. Use matching views.
+- `before`: photos of the building before the work, for views that have no matching after.
 - `process`: photos taken during the work.
 - `drawings`: drawings, renders or design views, shown full width with captions.
 

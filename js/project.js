@@ -37,12 +37,6 @@
       <div class="project-body">${(p.body || []).map((t) => `<p>${esc(t)}</p>`).join("")}</div>
       <dl class="list facts">${facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl>
     </div>
-    ${(p.photos || []).length ? `
-    <section class="block" aria-labelledby="photos-heading">
-      <h2 id="photos-heading">Photographs</h2>
-      <div class="gallery">${p.photos.map((ph) => `
-        <figure><img src="${esc(ph.src)}" alt="${esc(ph.caption || p.title)}">${ph.caption ? `<figcaption>${esc(ph.caption)}</figcaption>` : ""}</figure>`).join("")}</div>
-    </section>` : ""}
     ${(p.beforeAfter || []).length ? `
     <section class="block" aria-labelledby="ba-heading">
       <h2 id="ba-heading">Before and after</h2>
@@ -51,6 +45,18 @@
           <figure>${photo(pair.before, p.title + ", before")}<figcaption><b>Before</b></figcaption></figure>
           <figure>${photo(pair.after, p.title + ", after")}<figcaption><b>After</b>${pair.caption ? `, ${esc(pair.caption)}` : ""}</figcaption></figure>
         </div>`).join("")}</div>
+    </section>` : ""}
+    ${(p.before || []).length ? `
+    <section class="block" aria-labelledby="before-heading">
+      <h2 id="before-heading">Before</h2>
+      <div class="gallery">${p.before.map((ph) => `
+        <figure><img src="${esc(ph.src)}" alt="${esc(ph.caption || p.title + ", before")}">${ph.caption ? `<figcaption>${esc(ph.caption)}</figcaption>` : ""}</figure>`).join("")}</div>
+    </section>` : ""}
+    ${(p.photos || []).length ? `
+    <section class="block" aria-labelledby="photos-heading">
+      <h2 id="photos-heading">Photographs</h2>
+      <div class="gallery">${p.photos.map((ph) => `
+        <figure><img src="${esc(ph.src)}" alt="${esc(ph.caption || p.title)}">${ph.caption ? `<figcaption>${esc(ph.caption)}</figcaption>` : ""}</figure>`).join("")}</div>
     </section>` : ""}
     ${(p.process || []).length ? `
     <section class="block" aria-labelledby="process-heading">

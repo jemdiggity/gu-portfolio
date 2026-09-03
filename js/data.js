@@ -53,25 +53,27 @@ const PROJECTS = [
     location: "Myoko, Japan",
     year: "",                        // fill in
     status: "Built",
-    type: "Renovation of a timber house",
+    type: "Renovation of a timber farmhouse",
     area: "",                        // fill in
     role: "Design and construction",
     cover: "images/tampopo-1/exterior-autumn.jpg",
-    summary: "The first of two large renovations in Myoko, a town in the heavy-snow country of Niigata Prefecture: a timber house re-clad in wood under its red metal roof, with a new double-height kitchen and dining room inside.",
+    summary: "The first of two large renovations in Myoko, a town in the heavy-snow country of Niigata Prefecture: an old post-and-beam farmhouse of tatami rooms, rebuilt inside as one tall kitchen and dining room and re-clad in wood under its red metal roof.",
     body: [
       // fill in: what the building was, what changed, materials, how the snow was handled.
-      "The house was taken back to its frame and rebuilt from the inside out. Downstairs, the kitchen, dining and living rooms became one tall room under an exposed roof, lit by a row of high windows. A kitchen island, made in the workshop, sits at its centre.",
-      "Outside, the walls were wrapped, insulated and clad in vertical boards. The red roof was kept, and a new stove flue was fitted through it."
+      "The house was a traditional farmhouse: dark timber posts and beams, plastered panels, tatami rooms opening into one another, and a family altar in the main room. It was taken back to its frame and rebuilt from the inside out.",
+      "Downstairs, the kitchen, dining and living rooms became one tall room under an exposed roof, lit by a row of high windows. A kitchen island, made in the workshop, sits at its centre. Outside, the walls were wrapped, insulated and clad in vertical boards. The red roof was kept, and a new stove flue was fitted through it."
     ],
     beforeAfter: [
-      { before: "images/tampopo-1/before-front.jpg", after: "images/tampopo-1/exterior-woodpile.jpg", caption: "the house from the lane" },
-      { before: "images/tampopo-1/before-winter.jpg", after: "images/tampopo-1/exterior-autumn.jpg", caption: "the front" }
+      { before: "images/tampopo-1/before-exterior.jpg", after: "images/tampopo-1/exterior-autumn.jpg", caption: "the front" },
+      { before: "images/tampopo-1/before-main-room.jpg", after: "images/tampopo-1/dining.jpg", caption: "the main room became the dining room" },
+      { before: "images/tampopo-1/before-tatami.jpg", after: "images/tampopo-1/kitchen-hall.jpg", caption: "tatami rooms became the kitchen" }
     ],
-    photos: [
-      { src: "images/tampopo-1/dining.jpg", caption: "Dining room and kitchen" },
-      { src: "images/tampopo-1/kitchen-hall.jpg", caption: "The kitchen under the roof" }
+    before: [
+      { src: "images/tampopo-1/before-altar.jpg", caption: "The family altar in the main room" },
+      { src: "images/tampopo-1/before-front.jpg", caption: "The house from the lane" }
     ],
     process: [
+      { src: "images/tampopo-1/before-winter.jpg", caption: "Wrapping the frame, midwinter" },
       { src: "images/tampopo-1/chimney.jpg", caption: "Fitting the stove flue" }
     ],
     drawings: [
@@ -93,28 +95,33 @@ const PROJECTS = [
     location: "Myoko, Japan",
     year: "",                        // fill in
     status: "Built",
-    type: "Renovation of a traditional house",
+    type: "Renovation of a family house",
     area: "",                        // fill in
     role: "Design and construction",
     cover: "images/tampopo-2/kitchen.jpg",
-    summary: "The second large renovation in Myoko: a traditional post-and-beam house with a new kitchen, washroom and living room fitted between the old timbers.",
+    summary: "The second large renovation in Myoko: a green-sided family house of small tatami rooms, opened up and refitted with a new kitchen, washroom and living room.",
     body: [
       // fill in
-      "The frame and ceilings were kept and the rooms between them refitted. A run of coral-coloured cabinets and a long wooden table make the kitchen; the washroom has a double basin on a timber stand and a dressing counter under the window."
+      "The house had a narrow hall, a stainless-steel kitchen from the 1970s and a run of tatami rooms divided by sliding screens. The rooms were opened into one another and refitted. A run of coral-coloured cabinets and a long wooden table make the kitchen; the washroom has a double basin on a timber stand and a dressing counter under the window."
     ],
     beforeAfter: [
-      { before: "images/tampopo-2/during-kitchen.jpg", after: "images/tampopo-2/kitchen.jpg", caption: "the kitchen wall" }
+      { before: "images/tampopo-2/before-kitchen.jpg", after: "images/tampopo-2/kitchen.jpg", caption: "the kitchen" },
+      { before: "images/tampopo-2/before-living.jpg", after: "images/tampopo-2/living.jpg", caption: "the living room" }
+    ],
+    before: [
+      { src: "images/tampopo-2/before-exterior.jpg", caption: "The house before the work" },
+      { src: "images/tampopo-2/before-hall.jpg", caption: "Entrance hall" },
+      { src: "images/tampopo-2/before-tatami.jpg", caption: "Tatami room" },
+      { src: "images/tampopo-2/before-rooms.jpg", caption: "Rooms divided by screens" }
     ],
     photos: [
-      { src: "images/tampopo-2/living.jpg", caption: "Living room" },
       { src: "images/tampopo-2/washroom.jpg", caption: "Washroom" },
       { src: "images/tampopo-2/vanity.jpg", caption: "Dressing counter" }
     ],
     process: [
       { src: "images/tampopo-2/during-interior.jpg", caption: "Rooms stripped back, midwinter" },
       { src: "images/tampopo-2/during-kitchen.jpg", caption: "Kitchen carcasses going in" }
-    ],
-    drawings: []
+    ]
   },
   {
     slug: "calgary-foundation-year",
@@ -126,11 +133,21 @@ const PROJECTS = [
     type: "Studio projects and models",
     area: "",
     role: "Student work",
-    cover: "images/calgary/model-3.jpg",
-    summary: "Projects from the foundation year of the Master of Architecture program at the University of Calgary.",
+    cover: "images/calgary/render-5.jpg",
+    summary: "Projects from the foundation year of the Master of Architecture program at the University of Calgary: a courtyard building in rammed earth around a single tree, and study models of a faceted shell over a stepped stage.",
     body: [
       // fill in: split this into one entry per project once names are ready.
-      "Study models in card and paper: a faceted shell over a stepped stage, with cut-out figures to test the scale of the spaces beneath it."
+      "In the courtyard project, thick earthen walls wrap a paved court around one tree. Openings are cut as deep reveals, and a mirrored wall on one side doubles the garden.",
+      "The models, in card and paper, test a faceted shell over a stepped stage, with cut-out figures to check the scale of the spaces beneath it."
+    ],
+    drawings: [
+      { src: "images/calgary/render-5.jpg", caption: "Courtyard project, the court" },
+      { src: "images/calgary/render-1.jpg", caption: "Courtyard project, entrance" },
+      { src: "images/calgary/render-3.jpg", caption: "Courtyard project, openings in the earth wall" },
+      { src: "images/calgary/render-4.jpg", caption: "Courtyard project, terrace" },
+      { src: "images/calgary/render-6.jpg", caption: "Courtyard project, looking into the court" },
+      { src: "images/calgary/render-2.jpg", caption: "Courtyard project, approach" },
+      { src: "images/calgary/render-7.jpg", caption: "Courtyard project, car court" }
     ],
     photos: [
       { src: "images/calgary/model-1.jpg", caption: "Model, entry ramp" },
@@ -139,32 +156,7 @@ const PROJECTS = [
       { src: "images/calgary/model-4.jpg", caption: "Model, the shell" }
     ]
   },
-  {
-    slug: "dscau-undergraduate",
-    series: "academic",
-    title: "Undergraduate studio",
-    location: "Digital Seoul Culture Arts University",
-    year: "",                        // fill in
-    status: "Bachelor's, architecture",
-    type: "Studio project",
-    area: "",
-    role: "Student work",
-    cover: "images/dscau/render-5.jpg",
-    summary: "A project from the architecture program at Digital Seoul Culture Arts University: a courtyard building in rammed earth with a single tree at its centre.",
-    body: [
-      // fill in
-      "Thick earthen walls wrap a paved court around one tree. Openings are cut as deep reveals, and a mirrored wall on one side doubles the garden."
-    ],
-    drawings: [
-      { src: "images/dscau/render-5.jpg", caption: "The courtyard" },
-      { src: "images/dscau/render-1.jpg", caption: "Entrance" },
-      { src: "images/dscau/render-3.jpg", caption: "Openings in the earth wall" },
-      { src: "images/dscau/render-4.jpg", caption: "Terrace" },
-      { src: "images/dscau/render-6.jpg", caption: "Looking into the court" },
-      { src: "images/dscau/render-2.jpg", caption: "Approach" },
-      { src: "images/dscau/render-7.jpg", caption: "Car court" }
-    ]
-  },
+  // Digital Seoul Culture Arts University: add an entry here once there are photographs.
   {
     slug: "kitchen-cabinets",
     series: "furniture",
