@@ -60,18 +60,19 @@ const PROJECTS = [
     summary: "The first of two large renovations in Myoko, a town in the heavy-snow country of Niigata Prefecture: an old post-and-beam farmhouse of tatami rooms, rebuilt inside as one tall kitchen and dining room and re-clad in wood under its red metal roof.",
     body: [
       // fill in: what the building was, what changed, materials, how the snow was handled.
-      "The house was a traditional farmhouse: dark timber posts and beams, plastered panels and tatami rooms opening into one another. It was taken back to its frame and rebuilt from the inside out.",
+      "The house was a traditional farmhouse: dark timber posts and beams, plastered panels, tatami rooms opening into one another, and a family altar in one of them. It was taken back to its frame and rebuilt from the inside out.",
       "Downstairs, the kitchen, dining and living rooms became one tall room under an exposed roof, lit by a row of high windows. A kitchen island, made in the workshop, sits at its centre. Outside, the walls were wrapped, insulated and clad in vertical boards. The red roof was kept, and a new stove flue was fitted through it."
     ],
     beforeAfter: [
       { before: "images/tampopo-1/before-exterior.jpg", after: "images/tampopo-1/exterior-autumn.jpg", caption: "the front" },
-      { before: "images/tampopo-1/before-main-room.jpg", after: "images/tampopo-1/dining.jpg", caption: "the main room became the dining room" }
+      { before: "images/tampopo-1/before-altar.jpg", after: "images/tampopo-1/dining.jpg", caption: "the room with the family altar became the kitchen and dining room" }
     ],
     before: [
+      { src: "images/tampopo-1/before-main-room.jpg", caption: "The old main room" },
       { src: "images/tampopo-1/before-front.jpg", caption: "The house from the lane" }
     ],
     photos: [
-      { src: "images/tampopo-1/kitchen-hall.jpg", caption: "The kitchen under the roof" }
+      { src: "images/tampopo-1/kitchen-hall.jpg", caption: "The kitchen" }
     ],
     process: [
       { src: "images/tampopo-1/before-winter.jpg", caption: "Wrapping the frame, midwinter" },
@@ -103,23 +104,24 @@ const PROJECTS = [
     summary: "The second large renovation in Myoko: a green-sided family house of small tatami rooms, opened up and refitted with a new kitchen, washroom and living room.",
     body: [
       // fill in
-      "The house had a narrow hall, a stainless-steel kitchen from the 1970s and a run of tatami rooms divided by sliding screens, with the family altar in the main room. The main room and the old kitchen became one kitchen and dining room, and the other rooms were opened into one another and refitted. A run of coral-coloured cabinets and a long wooden table make the kitchen; the washroom has a double basin on a timber stand and a dressing counter under the window."
+      "The house had a narrow hall, a stainless-steel kitchen from the 1970s and a run of tatami rooms divided by sliding screens. The tatami rooms became the living room, the old sitting room and the screened rooms the kitchen and dining room, and the old kitchen the washroom and dressing counter. A run of coral-coloured cabinets and a long wooden table make the kitchen; the washroom has a double basin on a timber stand and a dressing counter under the window."
     ],
     beforeAfter: [
-      { before: "images/tampopo-2/before-altar.jpg", after: "images/tampopo-2/kitchen.jpg", caption: "the main room became the dining room" },
-      { before: "images/tampopo-2/before-kitchen.jpg", after: "images/tampopo-2/kitchen.jpg", caption: "the old kitchen became the new one" },
-      { before: "images/tampopo-2/before-living.jpg", after: "images/tampopo-2/living.jpg", caption: "the living room" }
+      { before: "images/tampopo-2/before-tatami-rooms.jpg", after: "images/tampopo-2/living-wide.jpg", caption: "the tatami rooms became the living room" },
+      { before: "images/tampopo-2/before-rooms.jpg", after: "images/tampopo-2/kitchen.jpg", caption: "the rooms divided by screens became the dining room" },
+      { before: "images/tampopo-2/before-kitchen.jpg", after: "images/tampopo-2/washroom-wide.jpg", caption: "the old kitchen became the washroom and dressing counter" },
+      { before: "images/tampopo-2/before-living.jpg", after: "images/tampopo-2/kitchen-dining.jpg", caption: "the old sitting room became the kitchen" }
+    ],
+    photos: [
+      { src: "images/tampopo-2/living.jpg", caption: "Living room" },
+      { src: "images/tampopo-2/kitchen-run.jpg", caption: "The kitchen" },
+      { src: "images/tampopo-2/washroom.jpg", caption: "Double basin on a timber stand" },
+      { src: "images/tampopo-2/vanity.jpg", caption: "Dressing counter" }
     ],
     before: [
       { src: "images/tampopo-2/before-exterior.jpg", caption: "The house before the work" },
-      { src: "images/tampopo-2/before-tatami-rooms.jpg", caption: "Tatami rooms, cleared out" },
       { src: "images/tampopo-2/before-hall.jpg", caption: "Entrance hall" },
-      { src: "images/tampopo-2/before-tatami.jpg", caption: "Tatami room" },
-      { src: "images/tampopo-2/before-rooms.jpg", caption: "Rooms divided by screens" }
-    ],
-    photos: [
-      { src: "images/tampopo-2/washroom.jpg", caption: "Washroom" },
-      { src: "images/tampopo-2/vanity.jpg", caption: "Dressing counter" }
+      { src: "images/tampopo-2/before-tatami.jpg", caption: "Tatami room" }
     ],
     process: [
       { src: "images/tampopo-2/during-interior.jpg", caption: "Rooms stripped back, midwinter" },
@@ -208,7 +210,8 @@ const PROJECTS = [
       { src: "images/bathroom/washstand.jpg", caption: "Washstand" },
       { src: "images/tampopo-2/washroom.jpg", caption: "Double basin, Tampopo 2" },
       { src: "images/tampopo-2/vanity.jpg", caption: "Dressing counter, Tampopo 2" },
-      { src: "images/bathroom/small-sink.jpg", caption: "Small basin on a shelf" }
+      { src: "images/bathroom/small-sink.jpg", caption: "Small basin on a shelf" },
+      { src: "images/bathroom/corner-basin.jpg", caption: "Corner basin with a curved timber splashback" }
     ],
     process: [
       { src: "images/bathroom/spraying.jpg", caption: "Spraying a vanity frame" }
@@ -227,11 +230,12 @@ const PROJECTS = [
     cover: "images/furniture/console.jpg",
     summary: "Tables and small pieces made alongside the cabinetry.",
     body: [
-      "A console table in dark-stained softwood and a slatted white side table, both built from stock timber."
+      "A console table in dark-stained softwood, a slatted white side table and a slatted oak stand for a record player, all built from stock timber."
     ],
     photos: [
       { src: "images/furniture/console.jpg", caption: "Console table" },
-      { src: "images/furniture/side-table.jpg", caption: "Side table" }
+      { src: "images/furniture/side-table.jpg", caption: "Side table" },
+      { src: "images/furniture/record-stand.jpg", caption: "Slatted stand for a record player and amplifier" }
     ]
   }
 ];
