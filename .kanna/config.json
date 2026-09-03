@@ -1,0 +1,10 @@
+{
+  "$schema": "https://schemas.kanna.build/config.schema.json",
+  "workflow": "no-review",
+  "flavors": {
+    "merge": "github"
+  },
+  "setup": [
+    "./.kanna/sync-local-config.sh"
+  ]
+}
