@@ -6,7 +6,7 @@ const SITE = {
   role: "Architecture, renovation and furniture",
   tagline: "Architecture, renovation and furniture. Two large renovations in Myoko, Japan, and cabinetry made by hand.",
   city: "",                          // fill in, e.g. "Calgary" or "Myoko"
-  email: "gu@example.com",           // fill in the real address
+  email: "gu.jungun@gmail.com",
   instagram: "",                     // e.g. "https://instagram.com/…"; leave "" to hide
   issued: "2026",
   heroImage: "",                     // e.g. "images/site/gu-on-the-tools.jpg"; leave "" to show the line drawing
@@ -22,12 +22,14 @@ const SITE = {
   },
   intro: [
     "Gu Jungun works across architecture, renovation and furniture. Her built work includes two large renovations in Myoko, in the snow country of Niigata, Japan, called Tampopo 1 and Tampopo 2.",
-    "Alongside buildings she designs and makes furniture and built-in cabinetry: kitchens, bathroom vanity counters and storage. Her training runs from engineering at Pusan National University through architecture at Seoul Cyber University to the Master of Architecture program at the University of Calgary."
+    "Alongside buildings she designs and makes furniture and built-in cabinetry: kitchens, bathroom vanity counters and storage.",
+    "She began her career as an electrical engineer in South Korea's shipbuilding industry, working for Hanwha Ocean and BP, before turning to architecture. Her training runs from engineering at Pusan National University through architecture at Seoul Cyber University to the Master of Architecture program at the University of Calgary."
   ],
   cv: [
     ["Master of Architecture", "University of Calgary"],
     ["Architecture", "Seoul Cyber University"],
     ["Engineering", "Pusan National University"],
+    ["Earlier career", "Electrical engineer, shipbuilding: Hanwha Ocean and BP"],
     ["Furniture and cabinetry", "Kitchens, bathroom vanities, storage"]
   ]
 };
