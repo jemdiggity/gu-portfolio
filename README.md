@@ -35,7 +35,7 @@ Photos live under `images/`, one folder per project, and are referenced from `js
 
 `SITE.onSite.photos` are the photos of Gu on site on the home page, and `SITE.portrait` is the picture in About.
 
-The current photos are 640 px exports. Larger exports (around 1600 px on the long side) will look sharper on large and high-density screens; drop them in under the same names.
+Photos are 1280 px on the long side, re-encoded at JPEG quality 74 with `sips`. To replace one, drop the new file in under the same name.
 
 ## Deploy
 
