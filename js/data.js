@@ -103,23 +103,20 @@ const PROJECTS = [
     summary: "The second large renovation in Myoko: a green-sided family house of small tatami rooms, opened up and refitted with a new kitchen, washroom and living room.",
     body: [
       // fill in
-      "The house had a narrow hall, a stainless-steel kitchen from the 1970s and a run of tatami rooms divided by sliding screens, with the family altar in the main room. The main room and the old kitchen became one kitchen and dining room, and the other rooms were opened into one another and refitted. A run of coral-coloured cabinets and a long wooden table make the kitchen; the washroom has a double basin on a timber stand and a dressing counter under the window."
+      "The house had a narrow hall, a stainless-steel kitchen from the 1970s and a run of tatami rooms divided by sliding screens, with the family altar in the main room. The main room and the screened rooms beside it became one kitchen and dining room, and the old kitchen became the washroom and dressing counter. A run of coral-coloured cabinets and a long wooden table make the kitchen; the washroom has a double basin on a timber stand and a dressing counter under the window."
     ],
     beforeAfter: [
       { before: "images/tampopo-2/before-altar.jpg", after: "images/tampopo-2/kitchen.jpg", caption: "the main room became the dining room" },
-      { before: "images/tampopo-2/before-kitchen.jpg", after: "images/tampopo-2/kitchen.jpg", caption: "the old kitchen became the new one" },
+      { before: "images/tampopo-2/before-rooms.jpg", after: "images/tampopo-2/kitchen.jpg", caption: "the rooms divided by screens became the kitchen" },
+      { before: "images/tampopo-2/before-kitchen.jpg", after: "images/tampopo-2/washroom.jpg", caption: "the old kitchen became the washroom" },
+      { before: "images/tampopo-2/before-kitchen.jpg", after: "images/tampopo-2/vanity.jpg", caption: "and the dressing counter" },
       { before: "images/tampopo-2/before-living.jpg", after: "images/tampopo-2/living.jpg", caption: "the living room" }
     ],
     before: [
       { src: "images/tampopo-2/before-exterior.jpg", caption: "The house before the work" },
-      { src: "images/tampopo-2/before-tatami-rooms.jpg", caption: "Tatami rooms, cleared out" },
       { src: "images/tampopo-2/before-hall.jpg", caption: "Entrance hall" },
       { src: "images/tampopo-2/before-tatami.jpg", caption: "Tatami room" },
-      { src: "images/tampopo-2/before-rooms.jpg", caption: "Rooms divided by screens" }
-    ],
-    photos: [
-      { src: "images/tampopo-2/washroom.jpg", caption: "Washroom" },
-      { src: "images/tampopo-2/vanity.jpg", caption: "Dressing counter" }
+      { src: "images/tampopo-2/before-tatami-rooms.jpg", caption: "Tatami rooms, cleared out" }
     ],
     process: [
       { src: "images/tampopo-2/during-interior.jpg", caption: "Rooms stripped back, midwinter" },
