@@ -65,11 +65,14 @@ const PROJECTS = [
     ],
     beforeAfter: [
       { before: "images/tampopo-1/before-exterior.jpg", after: "images/tampopo-1/exterior-autumn.jpg", caption: "the front" },
-      { before: "images/tampopo-1/before-main-room.jpg", after: "images/tampopo-1/dining.jpg", caption: "the main room became the dining room" },
-      { before: "images/tampopo-1/before-altar.jpg", after: "images/tampopo-1/kitchen-hall.jpg", caption: "the room with the family altar became the kitchen" }
+      { before: "images/tampopo-1/before-altar.jpg", after: "images/tampopo-1/dining.jpg", caption: "the room with the family altar became the kitchen and dining room" }
     ],
     before: [
+      { src: "images/tampopo-1/before-main-room.jpg", caption: "The old main room" },
       { src: "images/tampopo-1/before-front.jpg", caption: "The house from the lane" }
+    ],
+    photos: [
+      { src: "images/tampopo-1/kitchen-hall.jpg", caption: "The kitchen under the roof" }
     ],
     process: [
       { src: "images/tampopo-1/before-winter.jpg", caption: "Wrapping the frame, midwinter" },
