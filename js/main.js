@@ -36,11 +36,14 @@
   else {
     document.getElementById("onsite-text").textContent = SITE.onSite.text || "";
     document.getElementById("onsite-photos").innerHTML = photos.map((ph) => `
-      <figure><div class="photo"><img src="${esc(ph.src)}" alt="${esc(ph.caption || "")}" loading="lazy"></div>
+      <figure><div class="photo"><img src="${esc(ph.src)}" alt="${esc(ph.caption || "")}"></div>
       ${ph.caption ? `<figcaption>${esc(ph.caption)}</figcaption>` : ""}</figure>`).join("");
   }
 
   // About
+  const portrait = document.getElementById("portrait");
+  if (SITE.portrait) portrait.innerHTML = `<img src="${esc(SITE.portrait)}" alt="${esc(SITE.name)}">`;
+  else portrait.hidden = true;
   document.getElementById("about-text").innerHTML = SITE.intro.map((t) => `<p>${esc(t)}</p>`).join("");
   document.getElementById("cv").innerHTML = SITE.cv.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("");
 

@@ -9,15 +9,17 @@ const SITE = {
   email: "gu.jungun@gmail.com",
   instagram: "",                     // e.g. "https://instagram.com/…"; leave "" to hide
   issued: "2026",
-  heroImage: "",                     // e.g. "images/site/gu-on-the-tools.jpg"; leave "" to show the line drawing
-  heroImageAlt: "",
-  // Photos of Gu on site and on the tools. Add as many as you like; the section hides if empty.
+  portrait: "images/portrait.jpg",   // shown in About; leave "" to hide
+  // Photos of Gu on site and on the tools. The section hides if the list is empty.
   onSite: {
     text: "Gu is on site through construction, and often on the tools herself. The cabinetry is made by hand, and much of the renovation work in Myoko was carried out with the crew rather than only drawn for them.",
     photos: [
-      { src: "images/placeholder-site.svg", caption: "Replace with an on-site photo" },
-      { src: "images/placeholder-site.svg", caption: "Replace with an on-site photo" },
-      { src: "images/placeholder-site.svg", caption: "Replace with an on-site photo" }
+      { src: "images/tampopo-1/chimney.jpg", caption: "Fitting the stove flue, Tampopo 1" },
+      { src: "images/site/roof-framing.jpg", caption: "Cutting roof framing" },
+      { src: "images/site/nail-gun.jpg", caption: "Lining a room" },
+      { src: "images/site/table-saw.jpg", caption: "At the table saw" },
+      { src: "images/kitchen/carcasses.jpg", caption: "Kitchen island carcasses in the workshop" },
+      { src: "images/kitchen/painting.jpg", caption: "Painting a cabinet" }
     ]
   },
   intro: [
@@ -41,6 +43,8 @@ const SERIES = [
   { id: "furniture", title: "Furniture and cabinetry" }
 ];
 
+// Each project can have: cover, beforeAfter (pairs), process (during the work),
+// photos (finished work, shown in a grid), drawings (full width, with captions).
 const PROJECTS = [
   {
     slug: "tampopo-1",
@@ -49,26 +53,37 @@ const PROJECTS = [
     location: "Myoko, Japan",
     year: "",                        // fill in
     status: "Built",
-    type: "Renovation",
+    type: "Renovation of a timber house",
     area: "",                        // fill in
-    role: "Design",
-    cover: "drawings/tampopo-1.svg",          // image shown on the home page and at the top of the project page
-    summary: "The first of two large renovations in Myoko, a town in the heavy-snow country of Niigata Prefecture.",
+    role: "Design and construction",
+    cover: "images/tampopo-1/exterior-autumn.jpg",
+    summary: "The first of two large renovations in Myoko, a town in the heavy-snow country of Niigata Prefecture: a timber house re-clad in wood under its red metal roof, with a new double-height kitchen and dining room inside.",
     body: [
       // fill in: what the building was, what changed, materials, how the snow was handled.
-      "Tampopo 1 is a full renovation of an existing building in Myoko. A description of the existing condition, the brief and the work carried out will follow."
+      "The house was taken back to its frame and rebuilt from the inside out. Downstairs, the kitchen, dining and living rooms became one tall room under an exposed roof, lit by a row of high windows. A kitchen island, made in the workshop, sits at its centre.",
+      "Outside, the walls were wrapped, insulated and clad in vertical boards. The red roof was kept, and a new stove flue was fitted through it."
+    ],
+    beforeAfter: [
+      { before: "images/tampopo-1/before-front.jpg", after: "images/tampopo-1/exterior-woodpile.jpg", caption: "the house from the lane" },
+      { before: "images/tampopo-1/before-winter.jpg", after: "images/tampopo-1/exterior-autumn.jpg", caption: "the front" }
+    ],
+    photos: [
+      { src: "images/tampopo-1/dining.jpg", caption: "Dining room and kitchen" },
+      { src: "images/tampopo-1/kitchen-hall.jpg", caption: "The kitchen under the roof" }
+    ],
+    process: [
+      { src: "images/tampopo-1/chimney.jpg", caption: "Fitting the stove flue" }
     ],
     drawings: [
-      { src: "drawings/tampopo-1.svg", caption: "Plan, placeholder drawing" }
-    ],
-    // Before-and-after pairs. Each pair is shown side by side; put matching views together.
-    beforeAfter: [
-      { before: "images/placeholder-before.svg", after: "images/placeholder-after.svg", caption: "Replace with a matching before-and-after view" },
-      { before: "images/placeholder-before.svg", after: "images/placeholder-after.svg", caption: "Replace with a matching before-and-after view" }
-    ],
-    // Photos taken during the work.
-    process: [
-      { src: "images/placeholder-site.svg", caption: "Replace with a photo from the site" }
+      { src: "images/tampopo-1/view-first-floor.jpg", caption: "First floor, design model" },
+      { src: "images/tampopo-1/view-second-floor.jpg", caption: "Second floor, design model" },
+      { src: "images/tampopo-1/view-second-floor-section.jpg", caption: "Section through the second floor" },
+      { src: "images/tampopo-1/view-kitchen-living.jpg", caption: "Kitchen towards the living room" },
+      { src: "images/tampopo-1/view-living-dining.jpg", caption: "Living room towards the dining room" },
+      { src: "images/tampopo-1/view-dining-kitchen.jpg", caption: "Dining room towards the kitchen" },
+      { src: "images/tampopo-1/view-entrance-kitchen.jpg", caption: "Entrance towards the kitchen" },
+      { src: "images/tampopo-1/view-living-entrance.jpg", caption: "Living room towards the entrance" },
+      { src: "images/tampopo-1/view-entrance-bath.jpg", caption: "Entrance towards the bath" }
     ]
   },
   {
@@ -78,27 +93,28 @@ const PROJECTS = [
     location: "Myoko, Japan",
     year: "",                        // fill in
     status: "Built",
-    type: "Renovation",
+    type: "Renovation of a traditional house",
     area: "",                        // fill in
-    role: "Design",
-    cover: "drawings/tampopo-2.svg",          // image shown on the home page and at the top of the project page
-    summary: "The second large renovation in Myoko, following Tampopo 1.",
+    role: "Design and construction",
+    cover: "images/tampopo-2/kitchen.jpg",
+    summary: "The second large renovation in Myoko: a traditional post-and-beam house with a new kitchen, washroom and living room fitted between the old timbers.",
     body: [
       // fill in
-      "Tampopo 2 is the second of the two Myoko renovations. A description of the existing condition, the brief and the work carried out will follow."
+      "The frame and ceilings were kept and the rooms between them refitted. A run of coral-coloured cabinets and a long wooden table make the kitchen; the washroom has a double basin on a timber stand and a dressing counter under the window."
     ],
-    drawings: [
-      { src: "drawings/tampopo-2.svg", caption: "Section, placeholder drawing" }
-    ],
-    // Before-and-after pairs. Each pair is shown side by side; put matching views together.
     beforeAfter: [
-      { before: "images/placeholder-before.svg", after: "images/placeholder-after.svg", caption: "Replace with a matching before-and-after view" },
-      { before: "images/placeholder-before.svg", after: "images/placeholder-after.svg", caption: "Replace with a matching before-and-after view" }
+      { before: "images/tampopo-2/during-kitchen.jpg", after: "images/tampopo-2/kitchen.jpg", caption: "the kitchen wall" }
     ],
-    // Photos taken during the work.
+    photos: [
+      { src: "images/tampopo-2/living.jpg", caption: "Living room" },
+      { src: "images/tampopo-2/washroom.jpg", caption: "Washroom" },
+      { src: "images/tampopo-2/vanity.jpg", caption: "Dressing counter" }
+    ],
     process: [
-      { src: "images/placeholder-site.svg", caption: "Replace with a photo from the site" }
-    ]
+      { src: "images/tampopo-2/during-interior.jpg", caption: "Rooms stripped back, midwinter" },
+      { src: "images/tampopo-2/during-kitchen.jpg", caption: "Kitchen carcasses going in" }
+    ],
+    drawings: []
   },
   {
     slug: "calgary-foundation-year",
@@ -107,17 +123,20 @@ const PROJECTS = [
     location: "University of Calgary",
     year: "",                        // fill in
     status: "Master of Architecture",
-    type: "Studio projects",
+    type: "Studio projects and models",
     area: "",
     role: "Student work",
-    cover: "drawings/calgary-foundation.svg",          // image shown on the home page and at the top of the project page
+    cover: "images/calgary/model-3.jpg",
     summary: "Projects from the foundation year of the Master of Architecture program at the University of Calgary.",
     body: [
-      // fill in: split this into one entry per project once names and drawings are ready.
-      "Studio projects from the foundation year of the MArch program. Individual projects, with drawings and models, will be listed here."
+      // fill in: split this into one entry per project once names are ready.
+      "Study models in card and paper: a faceted shell over a stepped stage, with cut-out figures to test the scale of the spaces beneath it."
     ],
-    drawings: [
-      { src: "drawings/calgary-foundation.svg", caption: "Placeholder drawing" }
+    photos: [
+      { src: "images/calgary/model-1.jpg", caption: "Model, entry ramp" },
+      { src: "images/calgary/model-2.jpg", caption: "Model, under the arch" },
+      { src: "images/calgary/model-3.jpg", caption: "Model, the upper walk" },
+      { src: "images/calgary/model-4.jpg", caption: "Model, the shell" }
     ]
   },
   {
@@ -127,17 +146,23 @@ const PROJECTS = [
     location: "Seoul Cyber University",
     year: "",                        // fill in
     status: "Bachelor's, architecture",
-    type: "Studio projects",
+    type: "Studio project",
     area: "",
     role: "Student work",
-    cover: "drawings/seoul-cyber.svg",          // image shown on the home page and at the top of the project page
-    summary: "Projects from the architecture program at Seoul Cyber University.",
+    cover: "images/seoul-cyber/render-5.jpg",
+    summary: "A project from the architecture program at Seoul Cyber University: a courtyard building in rammed earth with a single tree at its centre.",
     body: [
-      // fill in: split this into one entry per project once names and drawings are ready.
-      "Studio projects from the undergraduate architecture program. Individual projects, with drawings and models, will be listed here."
+      // fill in
+      "Thick earthen walls wrap a paved court around one tree. Openings are cut as deep reveals, and a mirrored wall on one side doubles the garden."
     ],
     drawings: [
-      { src: "drawings/seoul-cyber.svg", caption: "Placeholder drawing" }
+      { src: "images/seoul-cyber/render-5.jpg", caption: "The courtyard" },
+      { src: "images/seoul-cyber/render-1.jpg", caption: "Entrance" },
+      { src: "images/seoul-cyber/render-3.jpg", caption: "Openings in the earth wall" },
+      { src: "images/seoul-cyber/render-4.jpg", caption: "Terrace" },
+      { src: "images/seoul-cyber/render-6.jpg", caption: "Looking into the court" },
+      { src: "images/seoul-cyber/render-2.jpg", caption: "Approach" },
+      { src: "images/seoul-cyber/render-7.jpg", caption: "Car court" }
     ]
   },
   {
@@ -150,14 +175,23 @@ const PROJECTS = [
     type: "Built-in cabinetry",
     area: "",
     role: "Design and making",
-    cover: "drawings/kitchen-cabinets.svg",          // image shown on the home page and at the top of the project page
-    summary: "Fitted kitchen cabinetry, designed and built for specific rooms.",
+    cover: "images/kitchen/island-1.jpg",
+    summary: "Kitchen islands and cabinets, designed and built for the Myoko houses.",
     body: [
-      // fill in: materials, joinery, the kitchens they were made for.
-      "Kitchen cabinets designed and made to fit particular rooms. Notes on materials, hardware and finishes will follow."
+      "The island for Tampopo 1 is a painted timber frame with a hardwood butcher-block top, three drawers on full-extension runners and open shelves below for plates. A second run of white cabinets carries the range and its counters.",
+      "Carcasses are built in the workshop and finished in place."
     ],
-    drawings: [
-      { src: "drawings/kitchen-cabinets.svg", caption: "Elevation, placeholder drawing" }
+    photos: [
+      { src: "images/kitchen/island-2.jpg", caption: "Island with drawers open" },
+      { src: "images/kitchen/island-3.jpg", caption: "Island in the kitchen" },
+      { src: "images/kitchen/island-4.jpg", caption: "Drawer fronts and pulls" },
+      { src: "images/kitchen/island-6.jpg", caption: "Drawers on runners" },
+      { src: "images/kitchen/island-7.jpg", caption: "Butcher-block top" },
+      { src: "images/kitchen/white-kitchen.jpg", caption: "Range cabinets" }
+    ],
+    process: [
+      { src: "images/kitchen/carcasses.jpg", caption: "Carcasses in the workshop" },
+      { src: "images/kitchen/painting.jpg", caption: "Painting" }
     ]
   },
   {
@@ -170,14 +204,19 @@ const PROJECTS = [
     type: "Built-in cabinetry",
     area: "",
     role: "Design and making",
-    cover: "drawings/bathroom-vanity.svg",          // image shown on the home page and at the top of the project page
-    summary: "Lavatory counters and vanity units with integrated storage.",
+    cover: "images/bathroom/washstand.jpg",
+    summary: "Washstands and vanity counters on timber frames, with open shelves below.",
     body: [
-      // fill in
-      "Bathroom vanity counters with storage below. Notes on countertop materials, basins and finishes will follow."
+      "Each basin sits on a simple softwood frame, left open underneath so the room stays light. Counters are solid timber, oiled."
     ],
-    drawings: [
-      { src: "drawings/bathroom-vanity.svg", caption: "Elevation and section, placeholder drawing" }
+    photos: [
+      { src: "images/bathroom/washstand.jpg", caption: "Washstand" },
+      { src: "images/tampopo-2/washroom.jpg", caption: "Double basin, Tampopo 2" },
+      { src: "images/tampopo-2/vanity.jpg", caption: "Dressing counter, Tampopo 2" },
+      { src: "images/bathroom/small-sink.jpg", caption: "Small basin on a shelf" }
+    ],
+    process: [
+      { src: "images/bathroom/spraying.jpg", caption: "Spraying a vanity frame" }
     ]
   },
   {
@@ -190,14 +229,14 @@ const PROJECTS = [
     type: "Freestanding pieces",
     area: "",
     role: "Design and making",
-    cover: "drawings/furniture.svg",          // image shown on the home page and at the top of the project page
-    summary: "Tables, shelving and other freestanding pieces.",
+    cover: "images/furniture/console.jpg",
+    summary: "Tables and small pieces made alongside the cabinetry.",
     body: [
-      // fill in
-      "Freestanding furniture made alongside the cabinetry work. Individual pieces will be listed here."
+      "A console table in dark-stained softwood and a slatted white side table, both built from stock timber."
     ],
-    drawings: [
-      { src: "drawings/furniture.svg", caption: "Elevation, placeholder drawing" }
+    photos: [
+      { src: "images/furniture/console.jpg", caption: "Console table" },
+      { src: "images/furniture/side-table.jpg", caption: "Side table" }
     ]
   }
 ];

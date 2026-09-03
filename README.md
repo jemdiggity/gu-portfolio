@@ -16,24 +16,25 @@ Then open http://localhost:8000.
 
 Everything shown on the site comes from one file: `js/data.js`.
 
-- `SITE` holds the name, role line, contact address, the intro paragraphs, the education list, the on-site photos and an optional hero photo.
+- `SITE` holds the name, intro line, contact address, the about paragraphs, the education list, the portrait and the on-site photos.
 - `SERIES` defines the groups in the index (built work, academic work, furniture and cabinetry).
 - `PROJECTS` is the list of projects. Add, remove or reorder entries there; the home page and project pages update on their own. Each project has a `cover` image used on the home page and at the top of its page.
 
 Fields the owner has not supplied yet are marked `fill in` in that file. Leave a field as `""` to hide it.
 
-### Adding photos
+### Photos
 
-1. Put image files under `images/`, for example `images/tampopo-1/before-01.jpg`. JPEGs around 1600 px wide are plenty.
-2. Point the entries in `js/data.js` at them:
-   - `beforeAfter` on a project: pairs of `before` and `after` paths, shown side by side. Use matching views.
-   - `process` on a project: photos taken during the work.
-   - `SITE.onSite.photos`: photos of Gu on site, shown on the home page.
-   - `drawings` on a project: drawings or renders, shown with captions.
-   - `SITE.heroImage`: a photo for the top of the home page. When it is empty the line drawing is shown instead.
-3. Delete the `images/placeholder-*.svg` references once real photos are in.
+Photos live under `images/`, one folder per project, and are referenced from `js/data.js`. A project can list:
 
-The files in `drawings/` are placeholder line drawings and can be replaced with real drawings (SVG, PNG or JPEG) by changing the paths in `js/data.js`.
+- `cover`: the image on the home page and at the top of its page.
+- `photos`: finished work, shown two across at their natural proportions.
+- `beforeAfter`: pairs of `before` and `after` paths, shown side by side. Use matching views.
+- `process`: photos taken during the work.
+- `drawings`: drawings, renders or design views, shown full width with captions.
+
+`SITE.onSite.photos` are the photos of Gu on site on the home page, and `SITE.portrait` is the picture in About.
+
+The current photos are 640 px exports. Larger exports (around 1600 px on the long side) will look sharper on large and high-density screens; drop them in under the same names.
 
 ## Deploy
 
