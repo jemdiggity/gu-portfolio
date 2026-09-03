@@ -72,7 +72,7 @@ const PROJECTS = [
       { src: "images/tampopo-1/before-front.jpg", caption: "The house from the lane" }
     ],
     photos: [
-      { src: "images/tampopo-1/kitchen-hall.jpg", caption: "The kitchen under the roof" }
+      { src: "images/tampopo-1/kitchen-hall.jpg", caption: "The kitchen" }
     ],
     process: [
       { src: "images/tampopo-1/before-winter.jpg", caption: "Wrapping the frame, midwinter" },
@@ -210,7 +210,8 @@ const PROJECTS = [
       { src: "images/bathroom/washstand.jpg", caption: "Washstand" },
       { src: "images/tampopo-2/washroom.jpg", caption: "Double basin, Tampopo 2" },
       { src: "images/tampopo-2/vanity.jpg", caption: "Dressing counter, Tampopo 2" },
-      { src: "images/bathroom/small-sink.jpg", caption: "Small basin on a shelf" }
+      { src: "images/bathroom/small-sink.jpg", caption: "Small basin on a shelf" },
+      { src: "images/bathroom/corner-basin.jpg", caption: "Corner basin with a curved timber splashback" }
     ],
     process: [
       { src: "images/bathroom/spraying.jpg", caption: "Spraying a vanity frame" }
@@ -229,11 +230,12 @@ const PROJECTS = [
     cover: "images/furniture/console.jpg",
     summary: "Tables and small pieces made alongside the cabinetry.",
     body: [
-      "A console table in dark-stained softwood and a slatted white side table, both built from stock timber."
+      "A console table in dark-stained softwood, a slatted white side table and a slatted oak stand for a record player, all built from stock timber."
     ],
     photos: [
       { src: "images/furniture/console.jpg", caption: "Console table" },
-      { src: "images/furniture/side-table.jpg", caption: "Side table" }
+      { src: "images/furniture/side-table.jpg", caption: "Side table" },
+      { src: "images/furniture/record-stand.jpg", caption: "Slatted stand for a record player and amplifier" }
     ]
   }
 ];
