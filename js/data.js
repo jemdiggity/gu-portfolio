@@ -60,18 +60,16 @@ const PROJECTS = [
     summary: "The first of two large renovations in Myoko, a town in the heavy-snow country of Niigata Prefecture: an old post-and-beam farmhouse of tatami rooms, rebuilt inside as one tall kitchen and dining room and re-clad in wood under its red metal roof.",
     body: [
       // fill in: what the building was, what changed, materials, how the snow was handled.
-      "The house was a traditional farmhouse: dark timber posts and beams, plastered panels and tatami rooms opening into one another. It was taken back to its frame and rebuilt from the inside out.",
+      "The house was a traditional farmhouse: dark timber posts and beams, plastered panels, tatami rooms opening into one another, and a family altar in one of them. It was taken back to its frame and rebuilt from the inside out.",
       "Downstairs, the kitchen, dining and living rooms became one tall room under an exposed roof, lit by a row of high windows. A kitchen island, made in the workshop, sits at its centre. Outside, the walls were wrapped, insulated and clad in vertical boards. The red roof was kept, and a new stove flue was fitted through it."
     ],
     beforeAfter: [
       { before: "images/tampopo-1/before-exterior.jpg", after: "images/tampopo-1/exterior-autumn.jpg", caption: "the front" },
-      { before: "images/tampopo-1/before-main-room.jpg", after: "images/tampopo-1/dining.jpg", caption: "the main room became the dining room" }
+      { before: "images/tampopo-1/before-main-room.jpg", after: "images/tampopo-1/dining.jpg", caption: "the main room became the dining room" },
+      { before: "images/tampopo-1/before-altar.jpg", after: "images/tampopo-1/kitchen-hall.jpg", caption: "the room with the family altar became the kitchen" }
     ],
     before: [
       { src: "images/tampopo-1/before-front.jpg", caption: "The house from the lane" }
-    ],
-    photos: [
-      { src: "images/tampopo-1/kitchen-hall.jpg", caption: "The kitchen under the roof" }
     ],
     process: [
       { src: "images/tampopo-1/before-winter.jpg", caption: "Wrapping the frame, midwinter" },
@@ -103,10 +101,10 @@ const PROJECTS = [
     summary: "The second large renovation in Myoko: a green-sided family house of small tatami rooms, opened up and refitted with a new kitchen, washroom and living room.",
     body: [
       // fill in
-      "The house had a narrow hall, a stainless-steel kitchen from the 1970s and a run of tatami rooms divided by sliding screens, with the family altar in the main room. The main room became the kitchen, the screened rooms beside it the dining room, and the old kitchen the washroom and dressing counter. A run of coral-coloured cabinets and a long wooden table make the kitchen; the washroom has a double basin on a timber stand and a dressing counter under the window."
+      "The house had a narrow hall, a stainless-steel kitchen from the 1970s and a run of tatami rooms divided by sliding screens. The tatami rooms became the kitchen, the screened rooms beside them the dining room, and the old kitchen the washroom and dressing counter. A run of coral-coloured cabinets and a long wooden table make the kitchen; the washroom has a double basin on a timber stand and a dressing counter under the window."
     ],
     beforeAfter: [
-      { before: "images/tampopo-2/before-altar.jpg", after: "images/tampopo-2/kitchen-run.jpg", caption: "the main room with the family altar became the kitchen" },
+      { before: "images/tampopo-2/before-tatami-rooms.jpg", after: "images/tampopo-2/kitchen-run.jpg", caption: "the tatami rooms became the kitchen" },
       { before: "images/tampopo-2/before-rooms.jpg", after: "images/tampopo-2/kitchen.jpg", caption: "the rooms divided by screens became the dining room" },
       { before: "images/tampopo-2/before-kitchen.jpg", after: "images/tampopo-2/washroom-wide.jpg", caption: "the old kitchen became the washroom and dressing counter" },
       { before: "images/tampopo-2/before-living.jpg", after: "images/tampopo-2/living.jpg", caption: "the living room" }
@@ -118,8 +116,7 @@ const PROJECTS = [
     before: [
       { src: "images/tampopo-2/before-exterior.jpg", caption: "The house before the work" },
       { src: "images/tampopo-2/before-hall.jpg", caption: "Entrance hall" },
-      { src: "images/tampopo-2/before-tatami.jpg", caption: "Tatami room" },
-      { src: "images/tampopo-2/before-tatami-rooms.jpg", caption: "Tatami rooms, cleared out" }
+      { src: "images/tampopo-2/before-tatami.jpg", caption: "Tatami room" }
     ],
     process: [
       { src: "images/tampopo-2/during-interior.jpg", caption: "Rooms stripped back, midwinter" },
