@@ -25,13 +25,13 @@ const SITE = {
   intro: [
     "Gu Jungun works across architecture, renovation and furniture. Her built work includes two large renovations in Myoko, in the snow country of Niigata, Japan, called Tampopo 1 and Tampopo 2.",
     "Alongside buildings she designs and makes furniture and built-in cabinetry: kitchens, bathroom vanity counters and storage.",
-    "She began her career as an electrical engineer in South Korea's shipbuilding industry, working for Hanwha Ocean and BP, before turning to architecture. Her training runs from engineering at Pusan National University through architecture at Seoul Cyber University to the Master of Architecture program at the University of Calgary."
+    "She began her career as an electrical engineer in South Korea's shipbuilding industry, working for Hanwha Ocean and BP (British Petroleum), before turning to architecture. Her training runs from engineering at Pusan National University through architecture at Digital Seoul Culture Arts University to the Master of Architecture program at the University of Calgary."
   ],
   cv: [
     ["Master of Architecture", "University of Calgary"],
-    ["Architecture", "Seoul Cyber University"],
+    ["Architecture", "Digital Seoul Culture Arts University"],
     ["Engineering", "Pusan National University"],
-    ["Earlier career", "Electrical engineer, shipbuilding: Hanwha Ocean and BP"],
+    ["Earlier career", "Electrical engineer, shipbuilding: Hanwha Ocean and BP (British Petroleum)"],
     ["Furniture and cabinetry", "Kitchens, bathroom vanities, storage"]
   ]
 };
@@ -140,29 +140,29 @@ const PROJECTS = [
     ]
   },
   {
-    slug: "seoul-cyber-undergraduate",
+    slug: "dscau-undergraduate",
     series: "academic",
     title: "Undergraduate studio",
-    location: "Seoul Cyber University",
+    location: "Digital Seoul Culture Arts University",
     year: "",                        // fill in
     status: "Bachelor's, architecture",
     type: "Studio project",
     area: "",
     role: "Student work",
-    cover: "images/seoul-cyber/render-5.jpg",
-    summary: "A project from the architecture program at Seoul Cyber University: a courtyard building in rammed earth with a single tree at its centre.",
+    cover: "images/dscau/render-5.jpg",
+    summary: "A project from the architecture program at Digital Seoul Culture Arts University: a courtyard building in rammed earth with a single tree at its centre.",
     body: [
       // fill in
       "Thick earthen walls wrap a paved court around one tree. Openings are cut as deep reveals, and a mirrored wall on one side doubles the garden."
     ],
     drawings: [
-      { src: "images/seoul-cyber/render-5.jpg", caption: "The courtyard" },
-      { src: "images/seoul-cyber/render-1.jpg", caption: "Entrance" },
-      { src: "images/seoul-cyber/render-3.jpg", caption: "Openings in the earth wall" },
-      { src: "images/seoul-cyber/render-4.jpg", caption: "Terrace" },
-      { src: "images/seoul-cyber/render-6.jpg", caption: "Looking into the court" },
-      { src: "images/seoul-cyber/render-2.jpg", caption: "Approach" },
-      { src: "images/seoul-cyber/render-7.jpg", caption: "Car court" }
+      { src: "images/dscau/render-5.jpg", caption: "The courtyard" },
+      { src: "images/dscau/render-1.jpg", caption: "Entrance" },
+      { src: "images/dscau/render-3.jpg", caption: "Openings in the earth wall" },
+      { src: "images/dscau/render-4.jpg", caption: "Terrace" },
+      { src: "images/dscau/render-6.jpg", caption: "Looking into the court" },
+      { src: "images/dscau/render-2.jpg", caption: "Approach" },
+      { src: "images/dscau/render-7.jpg", caption: "Car court" }
     ]
   },
   {
