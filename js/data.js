@@ -103,14 +103,17 @@ const PROJECTS = [
     summary: "The second large renovation in Myoko: a green-sided family house of small tatami rooms, opened up and refitted with a new kitchen, washroom and living room.",
     body: [
       // fill in
-      "The house had a narrow hall, a stainless-steel kitchen from the 1970s and a run of tatami rooms divided by sliding screens, with the family altar in the main room. The main room and the screened rooms beside it became one kitchen and dining room, and the old kitchen became the washroom and dressing counter. A run of coral-coloured cabinets and a long wooden table make the kitchen; the washroom has a double basin on a timber stand and a dressing counter under the window."
+      "The house had a narrow hall, a stainless-steel kitchen from the 1970s and a run of tatami rooms divided by sliding screens, with the family altar in the main room. The main room became the kitchen, the screened rooms beside it the dining room, and the old kitchen the washroom and dressing counter. A run of coral-coloured cabinets and a long wooden table make the kitchen; the washroom has a double basin on a timber stand and a dressing counter under the window."
     ],
     beforeAfter: [
-      { before: "images/tampopo-2/before-altar.jpg", after: "images/tampopo-2/kitchen.jpg", caption: "the main room became the dining room" },
-      { before: "images/tampopo-2/before-rooms.jpg", after: "images/tampopo-2/kitchen.jpg", caption: "the rooms divided by screens became the kitchen" },
-      { before: "images/tampopo-2/before-kitchen.jpg", after: "images/tampopo-2/washroom.jpg", caption: "the old kitchen became the washroom" },
-      { before: "images/tampopo-2/before-kitchen.jpg", after: "images/tampopo-2/vanity.jpg", caption: "and the dressing counter" },
+      { before: "images/tampopo-2/before-altar.jpg", after: "images/tampopo-2/kitchen-run.jpg", caption: "the main room with the family altar became the kitchen" },
+      { before: "images/tampopo-2/before-rooms.jpg", after: "images/tampopo-2/kitchen.jpg", caption: "the rooms divided by screens became the dining room" },
+      { before: "images/tampopo-2/before-kitchen.jpg", after: "images/tampopo-2/washroom-wide.jpg", caption: "the old kitchen became the washroom and dressing counter" },
       { before: "images/tampopo-2/before-living.jpg", after: "images/tampopo-2/living.jpg", caption: "the living room" }
+    ],
+    photos: [
+      { src: "images/tampopo-2/washroom.jpg", caption: "Double basin on a timber stand" },
+      { src: "images/tampopo-2/vanity.jpg", caption: "Dressing counter" }
     ],
     before: [
       { src: "images/tampopo-2/before-exterior.jpg", caption: "The house before the work" },
