@@ -1,2 +1,5 @@
 # Kanna machine-local config (never committed)
 /.kanna/config.local.json
+
+# Agent temp files
+/.tmp/

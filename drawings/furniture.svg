@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" fill="none" stroke="#1a1a18" stroke-linecap="round" stroke-linejoin="round"><style>text{font-family:Archivo,Helvetica,Arial,sans-serif;font-size:12px;fill:#6b6a66;stroke:none}.w{stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter}.m{stroke-width:2}.t{stroke-width:.8}.f{fill:#1a1a18;stroke:none}.g{stroke:#c2331c}</style>
+<path class="t" d="M40 480 H760"/>
+<path class="m" d="M80 300 H420 V316 H80 Z"/>
+<path class="m" d="M104 316 V480 M124 316 V480 M376 316 V480 M396 316 V480"/>
+<path class="t" d="M104 400 H124 M376 400 H396 M124 380 H376"/>
+<path class="m" d="M124 316 V340 H376 V316"/>
+<path class="w" d="M500 120 V480 M720 120 V480"/>
+<path class="m" d="M500 120 H720 M500 200 H720 M500 280 H720 M500 360 H720 M500 440 H720"/>
+<path class="t" d="M520 160 V200 M540 150 V200 M552 170 V200 M600 140 V200 M612 160 V200 M624 148 V200"/>
+<path class="t" d="M520 250 V280 M535 240 V280 M548 262 V280 M660 230 V280 M672 246 V280 M690 238 V280"/>
+<path class="t" d="M520 330 h60 v30 h-60z M640 316 h50 v44 h-50z"/>
+<path class="t" d="M700 120 V480" stroke-dasharray="2 6"/>
+<path class="t" d="M460 300 V480 M452 300 h16 M452 480 h16"/>
+<text x="425" y="395">740</text>
+<text x="80" y="90" fill="#1a1a18">Elevation, 1:20</text>
+</svg>
